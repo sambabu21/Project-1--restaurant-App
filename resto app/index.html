@@ -1,0 +1,103 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="main"> 
+                <h1>Sammy's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <div id="menu">
+            <!-- menu items will be displayed here -->
+        </div>   
+        <div id="order-tab" class="order hidden">
+            <h3 id="order-head">Your order</h3>
+            <div id="order-items">
+                <div class="listing">
+                    <div class="item-remove">
+                    <h7>Pizza</h7>
+                    <button class="remove-button">remove</button>
+                    </div>
+                    <h8>$14</h8>
+                </div>
+                <div class="listing">
+                    <div class="item-remove">
+                    <h7>burger</h7>
+                    <button class="remove-button">remove</button>
+                    </div>
+                    <h8>$20</h8>
+                </div>
+                <div class="listing">
+                    <div class="item-remove">
+                    <h7>Pizza</h7>
+                    <button class="remove-button" >remove</button>
+                    </div>
+                    <h8>$20</h8>
+                </div>
+                <div class="listing">
+                    <div class="item-remove">
+                    <h7>beer</h7>
+                    <button class="remove-button">remove</button>
+                    </div>
+                    <h8>$20</h8>
+                </div>
+                <div class="listing">
+                     <div class="item-remove">
+                    <h7>beer</h7>
+                    <button class="remove-button">remove</button>
+                    </div>
+                    <h8>$20</h8>
+                </div>
+                
+            </div> 
+            <div id="total">
+                    
+                </div>
+              <button id="complete-order-btn">Complete Order</button>  
+        </div>    
+        <div class="modal hidden" id="pay-modal">
+            <h5>Enter card details</h5>
+            <form >
+                    <div >
+                    <input 
+                        type="text" 
+                        placeholder="Enter your name" 
+                        class="form" 
+                        id="form-name" 
+                        name="Name"
+                        required
+                    >
+                    <input 
+                        type="text" 
+                        placeholder="Enter card number" 
+                        class="form" 
+                        id="form-num" 
+                        name="card-number"
+                        required
+                    >
+                    <input 
+                        type="password" 
+                        placeholder="Enter CVV" 
+                        class="form" 
+                        id="form-cvv" 
+                        name="card-cvv"
+                        required
+                    >
+                    <button type="submit" id="pay-button">Pay</button>
+                </div>
+
+                </form> 
+        </div>
+        <div id="order-placed" class="hidden">
+            
+            </div>    
+             
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
